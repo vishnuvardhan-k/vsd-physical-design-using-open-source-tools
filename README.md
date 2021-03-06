@@ -72,5 +72,51 @@ These commands open two windows 1.layout window
 
 ![D1SK4-MCQ7](https://user-images.githubusercontent.com/80052961/110208597-23810780-7eae-11eb-9dca-3ee02319f153.JPG)
 
+**D1SK4 – MCQ8:**  
+
+Type below commands
+
+cd
+
+cd vsdflow			
+
+mkdir my_picorv32	
+
+cd my_picorv32				
+
+mkdir source synthesis layout		
+
+cp ~/vsdflow/Verilog/picorv32.v/source/.	
+
+qflow gui &	
+
+cd vsdflow is a command change the directory to vsdflow, mkdir is a command create the folder, cd my_picorv32	- change the directory to my_picorv32, mkdir source synthesis layout - create folders source, synthesis and layout, cp ~/vsdflow/Verilog/picorv32.v/source/. - copy the Verilog file i.e picorv32 from source to vsdflow, qflow gui &	- it open qflow manager in a graphical user interface.
+
+These commands open qflow manager window
+
+				set technology = osu018
+    
+				Verilog source = picorv32.v
+    
+				Verilog module = picorv32
+    
+What is the % ratio of flipflop/total logic ?
+
+![D1SK4-MCQ8_1](https://user-images.githubusercontent.com/80052961/110208826-60013300-7eaf-11eb-97f7-02e4e14f9ccb.JPG)
+
+ After entering the commands shown above, it opens a qflow manager and we set technology = osu018, Verilog source = picorv32 and verilog module = picorv32. Click on start button opposite the preparation. If it is okay, then proceed to synthesis. Click on okay opposite to synthesis, it opens a synthesis log file. Synthesis file shows the number of cells, number of flops and etc.
+ 
+ ![D1SK4-MCQ8_2](https://user-images.githubusercontent.com/80052961/110208848-74453000-7eaf-11eb-80c8-3a1133b64282.JPG)
+
+Ratio of flops to logic cells = Total number of flops / Total number of cells
+
+![D1SK4-MCQ8](https://user-images.githubusercontent.com/80052961/110208861-86bf6980-7eaf-11eb-9386-dc81e7934f18.JPG)
+
+         Number of cells = 13197
+
+         Number of flops = 1613
+         
+ Ratio of flops to total logic  = 1317/1613 				  = 12.22%
+
 
 
