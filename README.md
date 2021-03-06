@@ -220,7 +220,9 @@ Repeat experiment given in D3SK1 - MCQ8
 Where does the switching threshold lies between?
 
 The below figure shows that cmos model description and the w/l ratios of both pmos and nmos
+
 ![D3SK1-MCQ10_2](https://user-images.githubusercontent.com/80052961/110210206-93938b80-7eb6-11eb-8708-69b194d49e38.JPG)
+
 The below images shows the all the commands and switching threshold value(vm) i.e x0
 
 ![D3SK1-MCQ10_1](https://user-images.githubusercontent.com/80052961/110210212-98f0d600-7eb6-11eb-9c8a-8528b43c0153.JPG)
