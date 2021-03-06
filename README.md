@@ -260,4 +260,19 @@ The below image shows the trainsient charecters of an inverter if input = 0v the
 
 ![D3SK1-MCQ11_1](https://user-images.githubusercontent.com/80052961/110210782-49f87000-7eb9-11eb-8596-eef1981181a3.JPG)
 
+**D3SK2 - MCQ1**
+
+cd
+
+cd ngspice_labs
+
+ngspice fn_prelayout.spice
+
+ngspice 1 -> run
+
+ngspice 1 -> setplot tran1
+
+ngspice 1 -> plot out 1.25
+
+What is the value of X0 at the intersection of horizontal blue line and middle rising waveform?
 
