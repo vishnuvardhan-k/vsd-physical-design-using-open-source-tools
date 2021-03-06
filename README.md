@@ -108,7 +108,7 @@ What is the % ratio of flipflop/total logic ?
  
  ![D1SK4-MCQ8_2](https://user-images.githubusercontent.com/80052961/110208848-74453000-7eaf-11eb-80c8-3a1133b64282.JPG)
 
-Ratio of flops to logic cells = Total number of flops / Total number of cells
+		Ratio of flops to logic cells = Total number of flops / Total number of cells
 
 ![D1SK4-MCQ8](https://user-images.githubusercontent.com/80052961/110208861-86bf6980-7eaf-11eb-9386-dc81e7934f18.JPG)
 
@@ -116,7 +116,7 @@ Ratio of flops to logic cells = Total number of flops / Total number of cells
 
          Number of flops = 1613
          
- Ratio of flops to total logic  = 1317/1613 				  = 12.22%
+ Ratio of flops to total logic  = 1317/1613 = 12.22%
 
 
 
