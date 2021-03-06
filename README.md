@@ -117,6 +117,29 @@ What is the % ratio of flipflop/total logic ?
          Number of flops = 1613
          
  Ratio of flops to total logic  = 1317/1613 = 12.22%
+ 
+ **DAY2 LAB**
+ 
+**D2SK4 - MCQ5**
+
+Type below command
+
+cd
+
+cd vsdflow/my_picorv32
+
+qflow display picorv32 &
+
+This will open layout and tkcon window In the layout window and then select all chip and then type the command in tkcon window "box".
+
+What is the area of you chip in microns?
+
+![qflow](https://user-images.githubusercontent.com/80052961/110209245-6b555e00-7eb1-11eb-80f5-0d04dfbab6c4.JPG)
+![placement2](https://user-images.githubusercontent.com/80052961/110209263-7c9e6a80-7eb1-11eb-98fa-f708573c7cfe.JPG)
+![layoutofpicorv32](https://user-images.githubusercontent.com/80052961/110209279-89bb5980-7eb1-11eb-87e6-66ee41f5fe24.JPG)
+![bottom_group](https://user-images.githubusercontent.com/80052961/110209283-8cb64a00-7eb1-11eb-88e8-b436d1196388.JPG)
+![chipsize](https://user-images.githubusercontent.com/80052961/110209286-917afe00-7eb1-11eb-8ee8-1e10961bd351.JPG)
+
 
 
 
