@@ -51,6 +51,26 @@ What are the number of files you see?
 
 ![D1SK4-MCQ6](https://user-images.githubusercontent.com/80052961/110208038-d3557580-7eac-11eb-8349-8ddb453254bd.JPG)
 
+**D1SK4 – MCQ7:**
+
+cd outdir_spi_slave
+
+qflow display spi_slave	
+
+on tkcon window, type “box” 
+
+What is the output area in microns ?
+
+These commands open two windows 1.layout window
+                                2. Tkcon window
+
+![D1SK4-MCQ7_1](https://user-images.githubusercontent.com/80052961/110208575-04827580-7eae-11eb-84a3-37c0a0e6e84c.JPG)
+
+1st select the chip area and then type the command box in tkcon window.it shows the selected area in microns.
+
+![D1SK4-MCQ7_2](https://user-images.githubusercontent.com/80052961/110208587-1b28cc80-7eae-11eb-9d28-f3410f268a2f.JPG)
+
+![D1SK4-MCQ7](https://user-images.githubusercontent.com/80052961/110208597-23810780-7eae-11eb-9dca-3ee02319f153.JPG)
 
 
 
