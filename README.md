@@ -172,5 +172,39 @@ git clone is a Git command line utility which is used to target an existing repo
 
 ![D3SK1-MCQ5](https://user-images.githubusercontent.com/80052961/110209735-0ea77280-7eb4-11eb-8147-aad0fa93b299.JPG)
 
+**D3SK1 - MCQ8**
+
+Type below commands
+
+cd
+
+cd ngspice_labs
+
+ngspice inv.spice
+
+There will be terminal like below
+
+ngspice 1 ->
+
+On the above ngspice terminal, type below commands
+
+run
+
+setplot dc1
+
+plot out in
+
+This will open a plot with CMOS VTC and Blue 45 degree line
+
+Click on the intersection of Blue line and CMOS VTC.
+
+Go to terminal
+
+What does "x0" value lies between?
+
+![D3SK1-MCQ8](https://user-images.githubusercontent.com/80052961/110209940-3fd47280-7eb5-11eb-995c-166a3a6eb778.JPG)
+
+The below diagram shows the VTC characteristics of an inverter. The blueline(tan 45) intersecting the VTC curve that is called as switching threshold voltage(vm). swicthing threshold is the point where vin = vout and at which both p & n mos turned on and they are in saturation region.
+![D3SK1-MCQ8_1](https://user-images.githubusercontent.com/80052961/110209947-44009000-7eb5-11eb-8062-d0de8b542873.JPG)
 
 
