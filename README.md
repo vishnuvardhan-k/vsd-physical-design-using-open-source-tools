@@ -35,11 +35,11 @@ What is last line as you see in the terminal?
 
 Type below commands on terminal
 
-cd vsdflow					                    # change the directory to vsdflow folder
+cd vsdflow					                          # change the directory to vsdflow folder
 
 ./vsdflow spi_slave_design_details.csv	
 
-ls -ltr outdir_spi_slave/			          # ls -ltr shows list files/folders
+ls -ltr outdir_spi_slave/			                 # ls -ltr shows list files/folders
 
 ls -ltr outdir_spi_slave | wc
 
