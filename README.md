@@ -152,6 +152,25 @@ The below image shows the chip area which is selected in the layoutsection.
 
 ![chipsize](https://user-images.githubusercontent.com/80052961/110209286-917afe00-7eb1-11eb-8ee8-1e10961bd351.JPG)
 
+**DAY3 LAB**
+
+**D3SK1 - MCQ5,6,7**
+
+Type below commands in terminal
+
+cd
+
+git clone https://github.com/kunalg123/ngspice_labs.git
+
+cd ngspice_labs
+
+cat inv.spice
+
+What is the width of PMOS,NM0S transistor and wp/wn?
+
+git clone is a Git command line utility which is used to target an existing repository and create a clone, or copy of the target repository and ngspice is a tool which is used for circuit simulation.
+
+![D3SK1-MCQ5](https://user-images.githubusercontent.com/80052961/110209735-0ea77280-7eb4-11eb-8147-aad0fa93b299.JPG)
 
 
 
