@@ -144,7 +144,7 @@ After entering the commands shown above, it opens a qflow manager and we set tec
 
 ![layoutofpicorv32](https://user-images.githubusercontent.com/80052961/110209279-89bb5980-7eb1-11eb-87e6-66ee41f5fe24.JPG)
 
-The below images shows the pins in bottom of chip.first we group them and then select the pin arrange to bottom.
+The below images shows the pins(clk,rstn) in bottom of chip.first we group them and then select the pin arrange to bottom.
 
 ![bottom_group](https://user-images.githubusercontent.com/80052961/110209283-8cb64a00-7eb1-11eb-88e8-b436d1196388.JPG)
 
