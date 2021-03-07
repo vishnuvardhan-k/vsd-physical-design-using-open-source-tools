@@ -14,7 +14,11 @@ This is 5 - day wrokshop for beginners using open source tools like yosys,magic,
 
 **Day 5 - Final steps for RTL2GDS**
 
+
+
 **DAY1 - STUDY AND REVIEW VARIUOS COMPONENTS OF RISC - V BASED PicoSoC**
+
+
 
 Package QFN - 48 is manufactured by germany labs. The full form of QFN is Quad Flat No leads and the number 48 represents the number of ports of the chip.
 
