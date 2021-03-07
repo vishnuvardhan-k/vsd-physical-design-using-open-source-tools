@@ -4,14 +4,21 @@ This is 5 - day wrokshop for beginners using open source tools like yosys,magic,
 
 *CONTENTS OF THE 5 - DAY WORKSHOP:*
 	
-	**Day 1 - Study and review various components of RISC-V based picoSoC**
-	**Day 2 - Chip planning strategies and introduction to foundry library cells**
-	**Day 3 - Design and characterize one library cell using Magic Layout tool and ngspice**
-	**Day 4 - Pre-layout timing analysis and importance of good clock tree**
-	**Day 5 - Final steps for RTL2GDS**
+**Day 1 - Study and review various components of RISC-V based picoSoC**
+**Day 2 - Chip planning strategies and introduction to foundry library cells**
+**Day 3 - Design and characterize one library cell using Magic Layout tool and ngspice**
+**Day 4 - Pre-layout timing analysis and importance of good clock tree**
+**Day 5 - Final steps for RTL2GDS**
+
+**DAY1 - STUDY AND REVIEW VARIUOS COMPONENTS OF RISC - V BASED PicoSoC**
+
+Package QFN - 48 is manufactured by germany labs. The full form of QFN is Quad Flat No leads and the number 48 represents the number of ports of the chip.
+
+![1](https://user-images.githubusercontent.com/80052961/110233528-90e27600-7f4a-11eb-856b-b47fa4b7a615.JPG)
+			QFN - 48
 	
 
-									**DAY1 LAB:**
+**DAY1 LAB:**
 
 **D1SK4 – MCQ3:**
 
