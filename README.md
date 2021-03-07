@@ -53,6 +53,22 @@ output of os are small functions like c,c++ and java. compiler compile the progr
 
 key features: 1. small size 2.high clock speed 3.native memory interface 4.optional IRQ support
 
+**IC DESIGN COMPONENTS:**
+
+Logic synthesis - yosys open synthesis suite
+
+Floorplanning, Placement and CTS - graywolf
+
+Routing - qrouter
+
+Static Timing Analysis - opentimer
+
+pre-layout/post-layout simulation - ngspice
+
+schematic editor - esim
+
+
+
 
 
 					  
