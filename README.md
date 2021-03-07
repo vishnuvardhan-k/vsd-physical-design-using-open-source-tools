@@ -119,7 +119,7 @@ What is the % ratio of flipflop/total logic ?
 
         			  	Number of flops = 1613
          
- Ratio of flops to total logic  = 1317/1613 = 12.22%
+ 			Ratio of flops to total logic  = 1317/1613 = 12.22%
  
  **DAY2 LAB**
  
@@ -209,6 +209,7 @@ The cd command, also known as chdir (change directory), is a command-line shell 
 ![D3SK1-MCQ8](https://user-images.githubusercontent.com/80052961/110209940-3fd47280-7eb5-11eb-995c-166a3a6eb778.JPG)
 
 The below diagram shows the VTC characteristics of an inverter. The blueline(tan 45) intersecting the VTC curve that is called as switching threshold voltage(vm). swicthing threshold is the point where vin = vout and at which both p & n mos turned on and they are in saturation region.
+
 ![D3SK1-MCQ8_1](https://user-images.githubusercontent.com/80052961/110209947-44009000-7eb5-11eb-8062-d0de8b542873.JPG)
 
 **D3SK1 - MCQ10**
@@ -398,6 +399,7 @@ The below figure shows the transient response:
 ![D3SK3-MCQ5_1](https://user-images.githubusercontent.com/80052961/110229976-676a2000-7f33-11eb-8c24-97b9c36ce3d1.JPG)
 
 1st x0 shows the rise time and 2nd x0 is the fall time of the above transient analysis:
+
 ![D3SK3-MCQ5](https://user-images.githubusercontent.com/80052961/110229966-50c3c900-7f33-11eb-867c-eb2f1101480f.JPG)
 
 
