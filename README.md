@@ -47,7 +47,11 @@ output of os are small functions like c,c++ and java. compiler compile the progr
 
 2.RV32 has 32 - bit instructions
 
-3. Suffixes specify available extensions  -I  : basic integer instruction set; -M : hardware mulptiplier/divider; -C : compressed instruction set (16 - bit)
+3. Suffixes specify available extensions  -I : basic integer instruction set; -M : hardware mulptiplier/divider; -C : compressed instruction set (16 - bit)
+
+**PICORV32 OVERVIEW:**
+
+key features: 1. small size 2.high clock speed 3.native memory interface 4.optional IRQ support
 
 
 
