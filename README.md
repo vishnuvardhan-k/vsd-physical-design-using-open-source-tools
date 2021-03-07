@@ -411,6 +411,11 @@ After that we do pre spice simulation to check the function and shape of the wav
 
 **Layout diagram using Euler's path and stick diagram:** stick diagram is a interface between circuit and final layout. Euler's path is defined as it is the path that covers each vertices atleast once. Optimize euler's path gives optimize layout. 
 
+![27](https://user-images.githubusercontent.com/80052961/110243294-b5a51080-7f7f-11eb-860a-e189d91dcdb2.JPG)  Optimize euler's path A - C - E - F - D - B
+
+![28](https://user-images.githubusercontent.com/80052961/110243384-2a784a80-7f80-11eb-8ac9-12fe3f9528e8.JPG)
+
+
 
 
 **DAY3 LAB**
