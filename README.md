@@ -1,6 +1,6 @@
 # VSD PHYSICAL DESIGN USING OPEN SOURCE TOOLS
 
-This is 5 - day wrokshop for beginners using open source tools like yosys,magic,opentimer,qrouter and ngspice.
+This is a 5 - day wrokshop for beginners using open source tools like yosys,magic,opentimer,qrouter and ngspice.
 
 *CONTENTS OF THE 5 - DAY WORKSHOP:*
 	
@@ -28,6 +28,20 @@ This is 5 - day wrokshop for beginners using open source tools like yosys,magic,
 **Pads** are one of the important components of the chip, which is used to send the signals to inside the chip and receive the signals from inside to outside and viceversa. **core** is used to place the all digital components. A **Die**  is a small block of semiconducting material on which a given functional circuit is fabricated.
 
 ![2](https://user-images.githubusercontent.com/80052961/110233813-9b9e0a80-7f4c-11eb-9b04-2e55ac148cb0.JPG)
+
+Typical chip core consists of System on Chip (SoC),static RAM (SRAM),DAC,ADC,PLL and serial peripheral interface (spi). **IP's** - intellectual property, it is basically needs some amount of intelligence to build the foundry IP's like SRAM,DAC AND ADC.Macros are pure digital logic like SoC. Macros and IP's are completely different.
+
+![3](https://user-images.githubusercontent.com/80052961/110234915-1f5af580-7f53-11eb-823d-40582fd6cab6.JPG)
+
+**HOW THE APPS ARE WORKING ?**
+
+![4](https://user-images.githubusercontent.com/80052961/110234990-85477d00-7f53-11eb-92cb-dbc13abdc053.JPG)
+
+Application Software or apps (Eg : mozilla firefox,adobe) enters into system software and then system software convert into program into machine lang. i.e 1's and 0's.it is understand by the hardware. System software consist of various layers mainly 1. operating system 
+									     2. compiler
+									     3. assembler
+									   
+output of os are small functions like c,c++ and java. compiler compile the program in .exe file and then assembler take this file and convert into binary code which is understand by computer. Using this binary code, we written a code in hardware description lang.(VHDL,Verilog). HDL is interface between the RISC - V and Qflow. Instructon set depends, what kind of hardware it is. For example, hardware is Intel x86 then the instructions belongs to intel x86. Instruction set represents abstract interface instruction set architecture (ISA) or architecture of computer, in between the c lang. program and hardware.
 
 
 
