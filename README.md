@@ -25,7 +25,7 @@ This is a 5 - day wrokshop for beginners using open source tools like yosys,magi
 
 			QFN - 48
 
-**Pads** are one of the important components of the chip, which is used to send the signals to inside the chip and receive the signals from inside to outside and viceversa. **core** is used to place the all digital components. A **Die**  is a small block of semiconducting material on which a given functional circuit is fabricated.
+**Pads** are one of the important components of the chip, which is used to send the signals to inside the chip and receive the signals from inside to outside and viceversa. **core** is a section of chip where we place the all digital components. A **Die**  is a small block of semiconducting material on which a given functional circuit is fabricated.
 
 ![2](https://user-images.githubusercontent.com/80052961/110233813-9b9e0a80-7f4c-11eb-9b04-2e55ac148cb0.JPG)
 
@@ -66,13 +66,18 @@ key features: 1. small size 2.high clock speed 3.native memory interface 4.optio
 					pre-layout/post-layout simulation - ngspice
 
 						schematic editor - esim
+						
 
+ngspice - General purpose circuit simulation programs for both non linear and linear analysis.
 
+magic - Vlsi layout editor, extraction and DRC tool
 
+opentimer - Open sourece high performance timing analysis tool
 
+esim - Complext circuit design, SPICE simulation and analysis and PCB design
 
+qflow - Tool chain for complete RTL2GDS flow
 					  
-
 
 **DAY1 LAB:**
 
@@ -194,6 +199,56 @@ What is the % ratio of flipflop/total logic ?
         			  	Number of flops = 1613
          
  			Ratio of flops to total logic  = 1317/1613 = 12.22%
+ 
+ 
+ **DAY 2 - CHIP PLANNING STRATEGIES & INTRODUCTION to FOUNDRY LIBRARY CELLS**
+ 
+ **core** is the section of the chip where the fundamental logic of the design is placed. A**die** ,which consists of core ,is a small semiconductor material specimen on whcih the fundamental circuit is fabricated. A ** netlist** describes the connectivity of a electronic design.
+ 
+ ![5](https://user-images.githubusercontent.com/80052961/110236559-71ecdf80-7f5c-11eb-87a0-3f77dd0f6ac2.JPG)
+
+If the logic cells occupies the complete area of the core,then this is called as **100% utilization**. The **Utilization Factor** is defined as the ratio of area occupied by netlist to total area of the core. **100% utilization means utilization factor is 1.0**.In practical scenario, we can only use 60 - 70 % utilization.
+
+						utilization factor = area occupied by netlist/Total area of the core
+						
+**aspect ratio** is defined as ratio of height to width of the core. If the aspect ratio is **1** then the chip is in square shape and if it is **0.5** then the chip is in rectangle shape.
+
+						Aspect ratio = height of the core / width of the core
+						
+**Define locations of preplaced cells:**
+						
+===> The arrangement of these IP's/blocks in a chip is reffered as **floorplanning**
+
+===> **Pre placed cells** - These blocks have user defined locations and hence are placed in chip before automated placement and routing and are called as **pre-placed cells**.Examples of preplaced cells are memories,mux,multiplier etc. once there placed,it can't be touched by placement and routing tools. Automated placement and routing tool places the remaining logical cells in the design onto chip.
+
+===> The prepalced cells has been placed in the core, depending upon the design scenario. Foe example,preplaced cells have more input connections then they are placed near to input side.
+
+![6](https://user-images.githubusercontent.com/80052961/110237069-c5146180-7f5f-11eb-864a-c7123cb2595e.jpg)
+
+**surround preplaced cells with decoupling capacitors:**
+
+===> During switching operatons, the ckt demands swichting current i.e peak current (I peak). 
+
+![7](https://user-images.githubusercontent.com/80052961/110237339-8ed7e180-7f61-11eb-827c-9b6747506df5.jpg)
+
+===> Due to the presence of resistance and capacitance, ther will be a voltage drop acroos them and the voltage at node **A** would be **vdd'(0.7 v instead of 1v)** . If the voltage goes below the noise margin,the logic **1** at the output of the circuit wont be detected.
+
+**noise margin summary:**
+
+For any signal to be considered as logic 0 and logic 1 , it should be in the NML and NMH respectively.If there is a huge difference between the vdd and vdd' then it comes into undefined region in noise margin levels.
+
+![8](https://user-images.githubusercontent.com/80052961/110237380-c050ad00-7f61-11eb-9dd8-3afd32f302db.jpg)
+
+For this problem, we have a solution i.e adding decoupling capacitors parallel to the circuit.Every time the circuit switches, it draws currents from the decoupling cap, wheras RL network is used to refill the charge into decoulping capacitor.If there are any power hungry circuits in the design, we place the decoupling caps close to them physically.
+
+**POWER PLANNING:** Decoupling caps take care of local communication but for global communication, we use power planning.![9](https://user-images.githubusercontent.com/80052961/110237696-59cc8e80-7f63-11eb-8062-d21c96d55678.JPG)
+
+
+
+
+ 
+ 
+ 
  
  **DAY2 LAB**
  
