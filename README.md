@@ -55,17 +55,17 @@ key features: 1. small size 2.high clock speed 3.native memory interface 4.optio
 
 **IC DESIGN COMPONENTS:**
 
-Logic synthesis - yosys open synthesis suite
+					Logic synthesis - yosys open synthesis suite
 
-Floorplanning, Placement and CTS - graywolf
+					Floorplanning, Placement and CTS - graywolf
 
-Routing - qrouter
+						Routing - qrouter
 
-Static Timing Analysis - opentimer
+					Static Timing Analysis - opentimer
 
-pre-layout/post-layout simulation - ngspice
+					pre-layout/post-layout simulation - ngspice
 
-schematic editor - esim
+						schematic editor - esim
 
 
 
