@@ -262,17 +262,32 @@ The below image shows the trainsient charecters of an inverter if input = 0v the
 
 **D3SK2 - MCQ1**
 
-cd
+					cd
 
-cd ngspice_labs
+					cd ngspice_labs
 
-ngspice fn_prelayout.spice
+					ngspice fn_prelayout.spice
 
-ngspice 1 -> run
+					ngspice 1 -> run
 
-ngspice 1 -> setplot tran1
+					ngspice 1 -> setplot tran1
 
-ngspice 1 -> plot out 1.25
+					ngspice 1 -> plot out 1.25
 
 What is the value of X0 at the intersection of horizontal blue line and middle rising waveform?
+
+The cd command, also known as chdir (change directory), is a command-line shell command used to change the current working directory in various operating systems. It can be used in shell scripts and batch files. ngspice is a circuit simulation tool used to simulate the dc and transient characteristics of different gates/cells. ngspice 1 -> run is used to run the fn_prelayout.spice. setplot tran1 is used to set the plot in transient mode. plot is a command, which is used to plot simulated waveforms with respect some input in this case input (50% of the power supply) i.e 1.25.
+
+The below figure shows the respective commands shown above:
+
+![D3SK2-MCQ1_0](https://user-images.githubusercontent.com/80052961/110228713-4dc3db00-7f29-11eb-9d89-a1b94f4b17d8.JPG)
+
+The below figure shows the value of x0 at the intersection of horizontal blue line(50% of the power supply) and middle rising waveform :
+
+![D3SK2-MCQ1](https://user-images.githubusercontent.com/80052961/110228717-53212580-7f29-11eb-88fb-e4a7858e611b.JPG)
+
+The below image shows transient waveform:
+![D3SK2-MCQ1_1](https://user-images.githubusercontent.com/80052961/110228725-5caa8d80-7f29-11eb-83f8-d1ca78217539.JPG)
+
+![D3SK2-MCQ1_2](https://user-images.githubusercontent.com/80052961/110228732-646a3200-7f29-11eb-9587-bade369c41e1.JPG)
 
