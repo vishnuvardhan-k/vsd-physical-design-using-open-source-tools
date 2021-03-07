@@ -243,7 +243,14 @@ For this problem, we have a solution i.e adding decoupling capacitors parallel t
 
 **POWER PLANNING:** Decoupling caps take care of local communication but for global communication, we use power planning.![9](https://user-images.githubusercontent.com/80052961/110237696-59cc8e80-7f63-11eb-8062-d21c96d55678.JPG)
 
+All the caps, which were charged to v volts will have to discharge to 0 through single ground point. This will cause a bump in groung tap point and it is called as **ground bounce**.All the caps, which were at 0 volts will have to charged to v through single power point. This will cause a bump in power tap point and it is called as **votlage droop**.
 
+instead of single power supply, we will use multiple supplies so that we can avoid voltage droop and ground bounce.power planning can be done in mash shape.
+
+![10](https://user-images.githubusercontent.com/80052961/110237908-98167d80-7f64-11eb-9bae-3518b4bf42d4.jpg)
+
+ 
+ 
 
 
  
