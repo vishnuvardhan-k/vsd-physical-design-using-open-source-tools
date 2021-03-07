@@ -1,6 +1,7 @@
 # VSD PHYSICAL DESIGN USING OPEN SOURCE TOOLS
 
-This is a 5 - day wrokshop for beginners using open source tools like yosys,magic,opentimer,qrouter and ngspice.
+The repository shows the 5 - day wrokshop for beginners using open source tools like yosys,magic,opentimer,qrouter and the purpose of this repository is to provide a complete idea about the 5 - days workshop on VLSI SoC/Physical design using open source EDA tools.
+
 
 *CONTENTS OF THE 5 - DAY WORKSHOP:*
 	
@@ -28,18 +29,6 @@ This is a 5 - day wrokshop for beginners using open source tools like yosys,magi
 **Pads** are one of the important components of the chip, which is used to send the signals to inside the chip and receive the signals from inside to outside and viceversa. **core** is a section of chip where we place the all digital components. A **Die**  is a small block of semiconducting material on which a given functional circuit is fabricated.
 
 ![2](https://user-images.githubusercontent.com/80052961/110233813-9b9e0a80-7f4c-11eb-9b04-2e55ac148cb0.JPG)
-
-Typical chip core consists of System on Chip (SoC),static RAM (SRAM),DAC,ADC,PLL and serial peripheral interface (spi). **IP's** - intellectual property, it is basically needs some amount of intelligence to build the foundry IP's like SRAM,DAC AND ADC.Macros are pure digital logic like SoC. Macros and IP's are completely different.
-
-![3](https://user-images.githubusercontent.com/80052961/110234915-1f5af580-7f53-11eb-823d-40582fd6cab6.JPG)
-
-**HOW THE APPS ARE WORKING ?**
-
-![4](https://user-images.githubusercontent.com/80052961/110234990-85477d00-7f53-11eb-92cb-dbc13abdc053.JPG)
-
-Application Software or apps (Eg : mozilla firefox,adobe) enters into system software and then system software convert into program into machine lang. i.e 1's and 0's.it is understand by the hardware. System software consist of various layers mainly 1. operating system 2. compiler 3. assembler
-									   
-output of os are small functions like c,c++ and java. compiler compile the program in .exe file and then assembler take this file and convert into binary code which is understand by computer. Using this binary code, we written a code in hardware description lang.(VHDL,Verilog). HDL is interface between the RISC - V and Qflow. Instructon set depends, what kind of hardware it is. For example, hardware is Intel x86 then the instructions belongs to intel x86. Instruction set represents abstract interface instruction set architecture (ISA) or architecture of computer, in between the c lang. program and hardware.
 
 **RISC - V OVERVIEW:**
 
@@ -380,13 +369,8 @@ ideally,pmos should be twice/trice bigger than nmos.
 **SWITCHING THRESHOLD(Vm):** Integrity and robustness,expressed by the static (or steady-state) behavior. CMOS Inverter robustness, defines certain parameters and one of thing is **switching threshold**. switching threshold (Vm) means the point at which the device switches.draw a tan 45 line in DC characteristic i.e vout vs vin.
 
 ![19](https://user-images.githubusercontent.com/80052961/110241862-2268dc80-7f79-11eb-8354-6171a384eb8c.JPG)
-![20](https://user-images.githubusercontent.com/80052961/110242111-83dd7b00-7f7a-11eb-8293-7f5462a5ad45.JPG)
 
-Vm has a critical area because of 1. Vin = Vout 2.Both pmos and nmos arein the sat. region 3.if both nmos and pmos are turn on, there is a leakage current flow from power to gnd.When designing static CMOS circuits, it is advisable to balance the driving strengths of the transistors by making the PMOS section wider than the NMOS section, if one wants to maximize the noise margins and obtain symmetrical characteristics. The required ratio is given by
-
-![21](https://user-images.githubusercontent.com/80052961/110242208-06fed100-7f7b-11eb-9af2-8b701f9ae8a0.JPG)
-
-The effect of changing the Wp/Wn ratio is to shift the transient region of the VTC. Increasing the width of the PMOS or the NMOS moves VM towards VDD or GND respectively.
+Vm has a critical area because of 1. Vin = Vout 2.Both pmos and nmos arein the sat. region 3.if both nmos and pmos are turn on, there is a leakage current flow from power to gnd.The effect of changing the Wp/Wn ratio is to shift the transient region of the VTC. Increasing the width of the PMOS or the NMOS moves VM towards VDD or GND respectively.
 
 **Layout:** Art of layout is a combination of euler's path and stick diagram.
 
@@ -396,10 +380,6 @@ using pull up network, we can build pull down network using duality theorem and 
 ![23](https://user-images.githubusercontent.com/80052961/110242613-d91a8c00-7f7c-11eb-86cc-9fb5c37fa6d2.JPG)
 
 The function of the circuit 			f = ((A.C).(B+D) + (E.F))'
-
-After that we do pre spice simulation to check the function and shape of the waveform.in order to spice simulation, we need to create nodes. Between the 2 nodes,there should be one component. To represent the function/circuit in ngspice model, we need nodes so we know the connectivity info the circuit.
-
-![24](https://user-images.githubusercontent.com/80052961/110242846-da988400-7f7d-11eb-9808-15ccced6992a.JPG)
 
 **Layout using only stick diagram:** These are the problems comes into picture, if we are only using stick diagram to draw a layout.
 
@@ -415,7 +395,13 @@ After that we do pre spice simulation to check the function and shape of the wav
 
 ![28](https://user-images.githubusercontent.com/80052961/110243384-2a784a80-7f80-11eb-8ac9-12fe3f9528e8.JPG)
 
+**Design Rules Check (DRC):** Afte completion of the layout, you need to check the design rule. It is very important step for the post layout simulation and fabrication of a chip.
 
+					polywidth				2λ
+					
+					metal width				3λ
+					
+					poly to active spaceing			1λ
 
 
 **DAY3 LAB**
@@ -665,6 +651,29 @@ The below figure shows the transient response:
 
 ![D3SK3-MCQ5](https://user-images.githubusercontent.com/80052961/110229966-50c3c900-7f33-11eb-867c-eb2f1101480f.JPG)
 
+**Day 4 - PRE-LAYOUT Timing ANALYSIS and IMPORTANCE of GOOD CLOCK TREE**
+
+**Delay Table:** At every level, Each buffer varies output load capacitance and input transitions/slew. in simple way, we have varying input transition at input buffer and varying output load at output load at the output buffer.so that we have different delays for one buffer/cell and solution for that is delay table. **Delay Table** is the representation of delays of a particular cell while varying the input slew and output load.
+
+**Timing Analysis:**
+
+**setup timing analysis:**  The setup time is the interval before the clock where the data must be held stable.
+
+![29](https://user-images.githubusercontent.com/80052961/110247846-47b71400-7f94-11eb-8ab5-0fee76ee8795.JPG)
+
+**hold timing analysis:** The hold time is the interval after the clock where the data must be held stable. Hold time can be negative, which means the data can change slightly before the clock edge and still be properly captured.
+
+![30](https://user-images.githubusercontent.com/80052961/110248001-fa877200-7f94-11eb-883a-c284b751a639.JPG)
+
+**Clock Tree Routing:** It is very important setp for the performance. H - tree is used to build the clock tree. The main objective of clock tree routing is minimazation of the skew. In clock routing, we clock buffers. there is a differnce in clock buffer and normal buffer that clock buffer have equal rise and fall time but in case of normal buffer it's not.
+
+**cross talk:** Crosstalk is a phenomenon, by which a logic transmitted in vlsi circuit or a net/wire creates undesired effect on the neighbouring circuit or nets/wires, due to capacitive coupling. If there is a crosstalk between two nets then all the parameters(input transition/slew ) are deteriorates.
+
+![31](https://user-images.githubusercontent.com/80052961/110248434-1e4bb780-7f97-11eb-8cad-b511a0fa1ecf.JPG)
+
+**Shielding:** shielding is placing ground or power lines at the sides of a. victim signal line to reduce noise and delay uncertainty. clock nets are considered as critical nets, by shielding the clock net we will protect the clock net from the outside world.
+
+
 **DAY4 LAB**
 
 **D4SK1 - MCQ6**
@@ -905,6 +914,42 @@ What is library hold time and hold slack?
 Setup and hold slack is defined as the difference between data required time and data arrival time. setup slack= Data Required Time - Data Arrival Time. hold slack= Data Arrival Time - Data Required Time.
 
 ![D4SK4-MCQ5](https://user-images.githubusercontent.com/80052961/110231887-6b506f00-7f40-11eb-9ade-40f1461ca9a6.jpg)
+
+
+**Day 5 - Final steps for RTL2GDS**
+
+**Routing:** In the vlsi design cycle, routing follows cell placement. To interconnect all the pins according to the specification of nets its konwn as **routing**. once routing is completed, precise paths are defined on the layout surface on which conductors carrying electrical signals are run. The main objective of routing is to minimize the area required for routing.
+
+There are 3 types of routing:
+
+				1. Grid/area routing
+
+				2. Global routing
+				
+				3. Detailed routing
+				
+**Design Rule Check:** These design rules in the technology file. for every technology, the design rules changes.
+
+There 3 typical design rules for the pairs of wires, which are running parallel.
+
+1. Wire Width : The wire has min. width or more than that is okay
+
+2. wire pitch: The centre to centre distance between 2 wires called as wire pitch.
+
+3.wire spacing: wire to wire maintain min.spacing or more than that
+
+If signal short occur, we route one of the signal into another metal layer.
+
+**Parasitic Extraction**: 
+
+Each and evry wire has got finite resistanc and capacitance and we have to extract it and then provides to analysis tool. Parasitic extraction represent in a special format known as **SPEF Format**. SPEF full form is Standard Parasitic Exchange Format
+
+** SPEF : standard parasitic exchange format** 
+IEEE 1481 - 1999
+
+The above two lines are SPEF Header
+
+![32](https://user-images.githubusercontent.com/80052961/110249097-63bdb400-7f9a-11eb-9eda-53edc7d97d78.JPG)
 
 
 **DAY5 LAB**
