@@ -665,9 +665,38 @@ Open terminal,Type below commands
 					
 What is the pre-layout frequency?
 
+The cd command, also known as chdir (change directory), is a command-line shell command used to change the current working directory and the current directory is /vsdflow/my_picorv32 and then start the routing for picorv32 using the command **qflow route picorv32**. After completing the 3 stages of routing,open sta for picorv32. BACKANNO -- Annotate the Subcircuit Pin Names to the Port Currents. ... raw file that can be used to refer to port currents by the pin name. This allows you to cross probe pin currents by clicking on the symbol's pin and then open the log file of sta for the design.
+
 ![D5SK2 - MCQ1_1](https://user-images.githubusercontent.com/80052961/110232410-82449080-7f43-11eb-9191-dcf378a1a3a2.jpg)
 
 					
-						![D5SK2 - MCQ1_2](https://user-images.githubusercontent.com/80052961/110232422-8c668f00-7f43-11eb-86ab-490fdf8f1d99.jpg)
+![D5SK2 - MCQ1_2](https://user-images.githubusercontent.com/80052961/110232422-8c668f00-7f43-11eb-86ab-490fdf8f1d99.jpg)
+
+It is the max. frequency in prelayout and which is 313.676MHz
+
+![D5SK2 - MCQ1](https://user-images.githubusercontent.com/80052961/110232437-a7390380-7f43-11eb-841d-d086092856c4.jpg)
+
+
+**D5SK2 - MCQ2**
+
+Pre-requisite - "D5SK2 - MCQ1 should be completed"
+
+If you have completed above MCQ, then open the below file
+
+					log/post_sta.log
+					
+What is post-layout frequency?
+
+The cd command, also known as chdir (change directory), is a command-line shell command used to change the current working directory and the current directory is /vsdflow/my_picorv32 and then start the routing for picorv32 using the command **qflow route picorv32**. After completing the 3 stages of routing,open sta for picorv32. BACKANNO -- Annotate the Subcircuit Pin Names to the Port Currents. ... raw file that can be used to refer to port currents by the pin name. This allows you to cross probe pin currents by clicking on the symbol's pin and then open the log file of sta for the design.without completion of routing the post layout frequency is not shown in the file.
+
+![D5SK2 - MCQ2_2 - Copy](https://user-images.githubusercontent.com/80052961/110232464-cafc4980-7f43-11eb-9a89-601d3c3b5a77.jpg)
+
+![D5SK2 - MCQ2_1](https://user-images.githubusercontent.com/80052961/110232469-d2bbee00-7f43-11eb-8907-e72f981b2d69.jpg)
+
+It is the max. frequency in postlayout and which is 293.556MHz
+
+![D5SK2 - MCQ2](https://user-images.githubusercontent.com/80052961/110232471-d64f7500-7f43-11eb-938c-0ce84aa0c876.jpg)
+
+
 
 
