@@ -294,6 +294,7 @@ The below figure shows the value of x0 at the intersection of horizontal blue li
 ![D3SK2-MCQ1](https://user-images.githubusercontent.com/80052961/110228717-53212580-7f29-11eb-88fb-e4a7858e611b.JPG)
 
 The below image shows transient waveform:
+
 ![D3SK2-MCQ1_1](https://user-images.githubusercontent.com/80052961/110228725-5caa8d80-7f29-11eb-83f8-d1ca78217539.JPG)
 
 ![D3SK2-MCQ1_2](https://user-images.githubusercontent.com/80052961/110228732-646a3200-7f29-11eb-9587-bade369c41e1.JPG)
@@ -464,6 +465,7 @@ The image is after editing the output load capacitance.
 ![D4SK1-MCQ8_1](https://user-images.githubusercontent.com/80052961/110230600-20325e00-7f38-11eb-8d66-c47030ba0d44.jpg)
 
 It is the transient response of the inverter:
+
 ![D4SK1-MCQ8_2](https://user-images.githubusercontent.com/80052961/110230611-2cb6b680-7f38-11eb-95c1-ce373b657561.jpg)
 
 rise delay is difference between rise time of output(2nd x0) to fall time input(1st x0).
