@@ -645,6 +645,29 @@ Setup and hold slack is defined as the difference between data required time and
 ![D4SK4-MCQ5](https://user-images.githubusercontent.com/80052961/110231887-6b506f00-7f40-11eb-9ade-40f1461ca9a6.jpg)
 
 
+**DAY5 LAB**
 
+**D5SK2 - MCQ1**
+
+Open terminal,Type below commands
+
+					cd
+					
+					cd vsdflow/my_picorv32
+
+					qflow route picorv32
+
+					qflow sta picorv32
+
+					qflow backanno picorv32
+
+					leafpad log/sta.log
+					
+What is the pre-layout frequency?
+
+![D5SK2 - MCQ1_1](https://user-images.githubusercontent.com/80052961/110232410-82449080-7f43-11eb-9191-dcf378a1a3a2.jpg)
+
+					
+						![D5SK2 - MCQ1_2](https://user-images.githubusercontent.com/80052961/110232422-8c668f00-7f43-11eb-86ab-490fdf8f1d99.jpg)
 
 
