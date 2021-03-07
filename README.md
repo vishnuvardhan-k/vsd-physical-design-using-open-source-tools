@@ -37,12 +37,21 @@ Typical chip core consists of System on Chip (SoC),static RAM (SRAM),DAC,ADC,PLL
 
 ![4](https://user-images.githubusercontent.com/80052961/110234990-85477d00-7f53-11eb-92cb-dbc13abdc053.JPG)
 
-Application Software or apps (Eg : mozilla firefox,adobe) enters into system software and then system software convert into program into machine lang. i.e 1's and 0's.it is understand by the hardware. System software consist of various layers mainly 1. operating system 
-									     2. compiler
-									     3. assembler
+Application Software or apps (Eg : mozilla firefox,adobe) enters into system software and then system software convert into program into machine lang. i.e 1's and 0's.it is understand by the hardware. System software consist of various layers mainly 1. operating system 2. compiler 3. assembler
 									   
 output of os are small functions like c,c++ and java. compiler compile the program in .exe file and then assembler take this file and convert into binary code which is understand by computer. Using this binary code, we written a code in hardware description lang.(VHDL,Verilog). HDL is interface between the RISC - V and Qflow. Instructon set depends, what kind of hardware it is. For example, hardware is Intel x86 then the instructions belongs to intel x86. Instruction set represents abstract interface instruction set architecture (ISA) or architecture of computer, in between the c lang. program and hardware.
 
+**RISC - V OVERVIEW:**
+
+1.RISC - V available in various flavours i.e genealogy
+
+2.RV32 has 32 - bit instructions
+
+3. Suffixes specify available extensions  -I  : basic integer instruction set; -M : hardware mulptiplier/divider; -C : compressed instruction set (16 - bit)
+
+
+
+					  
 
 
 **DAY1 LAB:**
