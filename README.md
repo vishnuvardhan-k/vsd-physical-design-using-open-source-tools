@@ -402,9 +402,245 @@ The below figure shows the transient response:
 
 ![D3SK3-MCQ5](https://user-images.githubusercontent.com/80052961/110229966-50c3c900-7f33-11eb-867c-eb2f1101480f.JPG)
 
+**DAY4 LAB**
+
+**D4SK1 - MCQ6**
+
+Go to Day 4 (When you start Day 4 labs, system will enable Day 2 labs for you. Click on Desktop icon)
+
+Open terminal and Type below commands
+
+					cd
+
+					git clone https://github.com/kunalg123/ngspice_labs
+
+					cd ngspice_labs
+
+					cat inv_tran.spice
+
+What is the input rise slew and fall slew ?
+
+git clone is a Git command line utility which is used to target an existing repository and create a clone, or copy of the target repository and ngspice is a tool which is used for circuit simulation.The cat command allows us to create single or multiple files, view contain of file, concatenate files and redirect output in terminal or files.
+
+The below figure shows the netlist description of a inverter. in that image, vin is a pulse with time period = 2ns,pulse width = 1ns,rise and fall slew = 10ps.
+
+![D4SK1-MCQ6](https://user-images.githubusercontent.com/80052961/110230321-3808e280-7f36-11eb-8988-8236347e8b81.jpg)
 
 
+**D4SK1 - MCQ7**
 
+Open terminal and Type below commands
+
+					cd
+
+					git clone https://github.com/kunalg123/ngspice_labs
+
+					cd ngspice_labs
+
+					cat inv_tran.spice
+					
+What is the output load and rise delay ?
+
+The below figure shows the netlist description of a inverter. in that image, cload represents the load capacitance of 10fF.
+
+![D4SK1-MCQ7_2](https://user-images.githubusercontent.com/80052961/110230453-165c2b00-7f37-11eb-9a9c-78af1713841a.jpg)
+
+The below figure shows the transient response of a inverter. from that, we calculate rise time delay. It is difference between rise time of output(1st x0) to fall time input(2nd x0).
+
+![D4SK1-MCQ7_1](https://user-images.githubusercontent.com/80052961/110230463-207e2980-7f37-11eb-8901-d5a840113e79.jpg)
+
+![D4SK1-MCQ7](https://user-images.githubusercontent.com/80052961/110230466-2542dd80-7f37-11eb-96fd-a0ce691339d5.jpg)
+
+**D4SK1 - MCQ8**
+
+Go to labs Modify to output load to 20fF in inv_tran.spice Run ngspice What is the rise delay that you see now?
+
+The below images shows the commands to open the inv_tran.spice file and edit the output load to 20fF.
+
+![D4SK1-MCQ8](https://user-images.githubusercontent.com/80052961/110230595-1a3c7d00-7f38-11eb-95ee-8281914419d7.jpg)
+
+The image is after editing the output load capacitance.
+
+![D4SK1-MCQ8_1](https://user-images.githubusercontent.com/80052961/110230600-20325e00-7f38-11eb-8d66-c47030ba0d44.jpg)
+
+It is the transient response of the inverter:
+![D4SK1-MCQ8_2](https://user-images.githubusercontent.com/80052961/110230611-2cb6b680-7f38-11eb-95c1-ce373b657561.jpg)
+
+rise delay is difference between rise time of output(2nd x0) to fall time input(1st x0).
+
+![D4SK1-MCQ8_0](https://user-images.githubusercontent.com/80052961/110230616-350ef180-7f38-11eb-9c7a-6378915be1c8.jpg)
+
+
+**D4SK2 - MCQ6,7**
+
+type the below command on terminal
+
+					leafpad /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib
+					
+What is the value of "slew_upper_threshold_pct_fall" and "output_threshold_pct_rise" ?
+
+![D4SK2-MCQ6_1](https://user-images.githubusercontent.com/80052961/110230767-2ffe7200-7f39-11eb-8e97-8c11287f3d12.jpg)
+
+The below figure shows the library file of 180nm technolgy. It contains all standard cells like and,or,inv,mux and etc.
+
+![D4SK2-MCQ6](https://user-images.githubusercontent.com/80052961/110230772-38ef4380-7f39-11eb-8e26-dbc51b1e2f09.jpg)
+
+**D4SK2 - MCQ8**
+
+type the below command on terminal
+
+					leafpad /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib
+					
+What are the 2 variables of "delay_template_5x5"?
+
+![D4SK2-MCQ8](https://user-images.githubusercontent.com/80052961/110230913-42c57680-7f3a-11eb-8542-bd7a51ede398.jpg)
+
+**D4SK2 - MCQ9**
+
+type the below command on terminal
+
+					leafpad /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib
+					
+Which cell delay table in line number 2943?
+
+![D4SK2-MCQ9](https://user-images.githubusercontent.com/80052961/110230945-920ba700-7f3a-11eb-942f-47667c18acb6.jpg)
+
+**D4SK2 - MCQ10**
+
+type the below command on terminal
+
+					leafpad /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib
+					
+Which delay template is used for INVX1?
+
+![D4SK2-MCQ10](https://user-images.githubusercontent.com/80052961/110230973-c4b59f80-7f3a-11eb-851c-e40637e4786d.jpg)
+
+**D4SK2 - MCQ11**
+
+Type below command
+
+					cd
+
+					cd vsdflow/my_picorv32
+
+					leafpad picorv32.sdc
+
+Type below lines in the file picorv32.sdc file which you have just opened above
+
+					create_clock -name clk -period 2.5 -waveform {0 1.25} [get_ports clk]
+Save and close the above file
+
+Now type below command
+
+					leafpad prelayout_sta.conf
+
+Type below lines in prelayout_sta.conf file which you have just opened above
+
+					read_liberty /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib
+
+					read_verilog synthesis/picorv32.rtlnopwr.v
+
+					link_design picorv32
+
+					read_sdc picorv32.sdc
+
+					report_checks
+Save and close the above file
+
+Now type below command
+
+					sta prelayout_sta.conf
+
+What is the SLACK value you see?
+
+The cd command, also known as chdir (change directory), is a command-line shell command used to change the current working directory. sta command is used to run the prelayout.conf file.
+
+![D4SK2-MCQ11_1](https://user-images.githubusercontent.com/80052961/110231093-a56b4200-7f3b-11eb-994a-5467e595a059.jpg)
+
+The leafpad is used to open picorv32.sdc . In sdc, we create a clock with period of 2.5ns with pulse width 1.25ns and the clock name is clk.
+
+![11](https://user-images.githubusercontent.com/80052961/110231106-b1570400-7f3b-11eb-84b9-81571773f03f.jpg)
+
+leafpad is used to open and then modify the contents with the below commands in prelayout_sta.conf
+
+![12](https://user-images.githubusercontent.com/80052961/110231111-b61bb800-7f3b-11eb-8f9f-e6c560279a00.JPG)
+
+The below image shows the setup timing analysis. it shows the data rquired time, data arrival time and slack. slack is the difference to data requirerd time to data arrival time.
+
+![D4SK2-MCQ11_2](https://user-images.githubusercontent.com/80052961/110231133-c895f180-7f3b-11eb-90de-ff84e8b08d84.jpg)
+
+
+**D4SK2 - MCQ12,13**
+
+Repeat all steps in D4SK2 - MCQ11
+
+NOTE - If you have already done that, then you will see below 'sta' terminal like below.Type below command
+
+% report_checks -digits 4
+
+What is the data arrival time and required time?
+
+![D4SK2-MCQ12_1](https://user-images.githubusercontent.com/80052961/110231405-9dac9d00-7f3d-11eb-9d0c-17f2d5e1f28e.jpg)
+
+![D4SK2-MCQ12](https://user-images.githubusercontent.com/80052961/110231431-b452f400-7f3d-11eb-9fdb-9bfe51469263.jpg)
+
+
+**D4SK4 - MCQ2**
+
+Perform all steps in D4SK2 - MCQ11
+
+You are now at below "sta" terminal
+
+					%
+Type below command in above terminal
+
+					set_propagated_clock [all_clocks]
+
+					report_checks
+
+What is the SLACK value after clock propagation ?
+
+These are the commands which are used to open sta. Static timing analysis (STA) is a method of validating the timing performance of a design by checking all possible paths for timing violations.
+
+![D4SK4-MCQ2_1](https://user-images.githubusercontent.com/80052961/110231569-7dc9a900-7f3e-11eb-89c0-d2d99d75555f.jpg)
+
+![D4SK4-MCQ2_2](https://user-images.githubusercontent.com/80052961/110231580-8fab4c00-7f3e-11eb-9373-9ae5a45b3204.jpg)
+
+The below figure shows the slack after the propagation of the clock i.e post static timing analysis.
+
+![D4SK4-MCQ2 ](https://user-images.githubusercontent.com/80052961/110231587-9fc32b80-7f3e-11eb-98db-b7798c7a22c0.jpg)
+
+**D4SK4 - MCQ3**
+
+Perform all steps in D4SK4 - MCQ2
+
+What is launch clock network delay or clock network delay propagated ?
+
+![13](https://user-images.githubusercontent.com/80052961/110231817-262c3d00-7f40-11eb-93ee-44980d912635.JPG)
+
+
+**D4SK4 - MCQ4**
+
+Perform all steps in D4SK4 - MCQ3
+
+What is the capture clock network delay?
+
+![14](https://user-images.githubusercontent.com/80052961/110231830-36dcb300-7f40-11eb-99e4-0e690881ead2.jpg)
+
+
+**D4SK4 - MCQ5**
+
+Perform all steps in D4SK4 - MCQ3
+
+Type below command
+
+				report_checks -path_delay min -digits 4
+				
+What is library hold time and hold slack? 
+
+Setup and hold slack is defined as the difference between data required time and data arrival time. setup slack= Data Required Time - Data Arrival Time. hold slack= Data Arrival Time - Data Required Time.
+
+![D4SK4-MCQ5](https://user-images.githubusercontent.com/80052961/110231887-6b506f00-7f40-11eb-9ade-40f1461ca9a6.jpg)
 
 
 
