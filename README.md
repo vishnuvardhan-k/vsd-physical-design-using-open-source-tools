@@ -15,17 +15,21 @@ This is 5 - day wrokshop for beginners using open source tools like yosys,magic,
 **Day 5 - Final steps for RTL2GDS**
 
 
-
 **DAY1 - STUDY AND REVIEW VARIUOS COMPONENTS OF RISC - V BASED PicoSoC**
 
+**IC TERMINOLOGIES :**
 
-
-Package QFN - 48 is manufactured by germany labs. The full form of QFN is Quad Flat No leads and the number 48 represents the number of ports of the chip.
+**Package** QFN - 48 is manufactured by germany labs. The full form of QFN is Quad Flat No leads and the number 48 represents the number of ports of the chip.The package dimensions are 7mm * 7mm.
 
 ![1](https://user-images.githubusercontent.com/80052961/110233528-90e27600-7f4a-11eb-856b-b47fa4b7a615.JPG)
 
 			QFN - 48
-	
+
+**Pads** are one of the important components of the chip, which is used to send the signals to inside the chip and receive the signals from inside to outside and viceversa. **core** is used to place the all digital components. A **Die**  is a small block of semiconducting material on which a given functional circuit is fabricated.
+
+![2](https://user-images.githubusercontent.com/80052961/110233813-9b9e0a80-7f4c-11eb-9b04-2e55ac148cb0.JPG)
+
+
 
 **DAY1 LAB:**
 
