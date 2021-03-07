@@ -1,5 +1,16 @@
 # VSD PHYSICAL DESIGN USING OPEN SOURCE TOOLS
 
+This is 5 - day wrokshop for beginners using open source tools like yosys,magic,opentimer,qrouter and ngspice.
+
+*CONTENTS OF THE 5 - DAY WORKSHOP:*
+	
+	**Day 1 - Study and review various components of RISC-V based picoSoC**
+	**Day 2 - Chip planning strategies and introduction to foundry library cells**
+	**Day 3 - Design and characterize one library cell using Magic Layout tool and ngspice**
+	**Day 4 - Pre-layout timing analysis and importance of good clock tree**
+	**Day 5 - Final steps for RTL2GDS**
+	
+
 									**DAY1 LAB:**
 
 **D1SK4 – MCQ3:**
