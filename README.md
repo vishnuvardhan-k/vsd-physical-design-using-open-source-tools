@@ -298,8 +298,22 @@ instead of single power supply, we will use multiple supplies so that we can avo
 
 **3.Characterization:** It is the step that will help to get the info of timing,noise and power.**GUNA tool** is used for timing,noise and power characterization.
  
- 
- 
+**TIMINIG CHARACTERIZATION:** Timing and delay information is important to the ASIC design process because it allows a level of realism to be incorporated into the circuit model.
+
+**propagation delay:** Propagation delay typically refers to the rise time or fall time in logic gates. This is the time it takes for a logic gate to change its output state based on a change in the input state. It occurs due to inherent capacitance in the logic gate.
+
+							tp = time(out_*_thr) - time (in_*_thr)
+							
+![14](https://user-images.githubusercontent.com/80052961/110240962-5f7ea000-7f74-11eb-9480-b4bbabd6b182.jpg)
+
+choosing threshold points is very important. If we haven't take care this, propagation delay will be -ve.There are 2 situations for tp = -ve, 1. if the threshold points are moved to above then tp is -ve and 2. if the circuit is designed not properly, it has hage wire delays then it leads to -ve propagation delay.
+
+![15](https://user-images.githubusercontent.com/80052961/110241139-45918d00-7f75-11eb-8784-90af7a6da375.jpg)
+
+**Transition delay:** Transition delay or slew is defined as the time taken by signal to rise from 10 %( 20%) to the 90 %( 80%) of its maximum value.
+
+![16](https://user-images.githubusercontent.com/80052961/110241188-7ec9fd00-7f75-11eb-88b0-772a7bf21d6c.JPG)
+
  
 **DAY2 LAB**
  
@@ -335,6 +349,69 @@ The below images shows the pins(clk,rstn) in bottom of chip.first we group them 
 The below image shows the chip area which is selected in the layoutsection.
 
 ![chipsize](https://user-images.githubusercontent.com/80052961/110209286-917afe00-7eb1-11eb-8ee8-1e10961bd351.JPG)
+
+
+**DAY 3 - DESIGN and CHARACTERIZE one LIBRARY CELL using Magic Layout Tool and ngspice**
+
+**1.SPICE deck Creation for CMOS Inverter:**
+
+**SPICE Deck:** it is the information of component connectivity,intput and output. substrate/body of pmos is connected to vdd and nmos substrate/body is conncted to vss.
+
+component values :
+
+				M1:PMOS : W/L = 0.375u/0.25u
+				
+				M2:NMOS : W/L = 0.375u/0.25u
+				
+				cap : Cload = 10fF
+				
+				vin = 2.5v and vdd = 2.5v
+
+![18](https://user-images.githubusercontent.com/80052961/110241794-cc943480-7f78-11eb-90dd-23d1eb3e743a.JPG)
+ 
+![17](https://user-images.githubusercontent.com/80052961/110241712-39f39580-7f78-11eb-8902-da172f2ccab8.JPG)
+
+ideally,pmos should be twice/trice bigger than nmos.
+
+**SPICE  Waveform:** It is the transfer characteristics of the inverter.
+
+![19](https://user-images.githubusercontent.com/80052961/110241862-2268dc80-7f79-11eb-8354-6171a384eb8c.JPG)
+
+**SWITCHING THRESHOLD(Vm):** Integrity and robustness,expressed by the static (or steady-state) behavior. CMOS Inverter robustness, defines certain parameters and one of thing is **switching threshold**. switching threshold (Vm) means the point at which the device switches.draw a tan 45 line in DC characteristic i.e vout vs vin.
+
+![19](https://user-images.githubusercontent.com/80052961/110241862-2268dc80-7f79-11eb-8354-6171a384eb8c.JPG)
+![20](https://user-images.githubusercontent.com/80052961/110242111-83dd7b00-7f7a-11eb-8293-7f5462a5ad45.JPG)
+
+Vm has a critical area because of 1. Vin = Vout 2.Both pmos and nmos arein the sat. region 3.if both nmos and pmos are turn on, there is a leakage current flow from power to gnd.When designing static CMOS circuits, it is advisable to balance the driving strengths of the transistors by making the PMOS section wider than the NMOS section, if one wants to maximize the noise margins and obtain symmetrical characteristics. The required ratio is given by
+
+![21](https://user-images.githubusercontent.com/80052961/110242208-06fed100-7f7b-11eb-9af2-8b701f9ae8a0.JPG)
+
+The effect of changing the Wp/Wn ratio is to shift the transient region of the VTC. Increasing the width of the PMOS or the NMOS moves VM towards VDD or GND respectively.
+
+**Layout:** Art of layout is a combination of euler's path and stick diagram.
+
+using pull up network, we can build pull down network using duality theorem and demorgan's theorem.pull down network is complementary function of pull up network and thats where duality and demorgan's theorems comes into picture.
+
+![22](https://user-images.githubusercontent.com/80052961/110242603-d4ee6e80-7f7c-11eb-8da3-964dbd20b2e7.JPG)
+![23](https://user-images.githubusercontent.com/80052961/110242613-d91a8c00-7f7c-11eb-86cc-9fb5c37fa6d2.JPG)
+
+The function of the circuit 			f = ((A.C).(B+D) + (E.F))'
+
+After that we do pre spice simulation to check the function and shape of the waveform.in order to spice simulation, we need to create nodes. Between the 2 nodes,there should be one component. To represent the function/circuit in ngspice model, we need nodes so we know the connectivity info the circuit.
+
+![24](https://user-images.githubusercontent.com/80052961/110242846-da988400-7f7d-11eb-9808-15ccced6992a.JPG)
+
+**Layout using only stick diagram:** These are the problems comes into picture, if we are only using stick diagram to draw a layout.
+
+											1. Congestion problem
+											2. DRC rule issues
+											3. Manufacturing issues
+	
+![26](https://user-images.githubusercontent.com/80052961/110243144-27c92580-7f7f-11eb-9494-64477cc3e173.JPG)
+
+**Layout diagram using Euler's path and stick diagram:** stick diagram is a interface between circuit and final layout. Euler's path is defined as it is the path that covers each vertices atleast once. Optimize euler's path gives optimize layout. 
+
+
 
 **DAY3 LAB**
 
