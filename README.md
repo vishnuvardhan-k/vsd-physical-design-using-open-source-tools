@@ -249,15 +249,59 @@ instead of single power supply, we will use multiple supplies so that we can avo
 
 ![10](https://user-images.githubusercontent.com/80052961/110237908-98167d80-7f64-11eb-9bae-3518b4bf42d4.jpg)
 
- 
- 
+**PIN PLACEMENT and LOGIC CELL PLACEMENT BLOCKAGE:** The connectivity info between gates is coded using VHDL/Verilog lang. and it is called as **netlist**. Pin placement is used the space between die and core. Frontend team defines the netlist connectivity and backend team defines the pin placement. Clock ports are bigger in size compared to data pins, the reason is clock is continuouslly driven the all flops in the design so we need least resistance as we know that resistance is inversely propotional to area.
 
+**LOGICAL CELL PLACEMENT BLOCKAGE:** It blocks the particular area in between the die and core so that automated placement and routing tools can't be placed the logical cells into the area.The floorplan is ready for placement and routing.
 
+![11](https://user-images.githubusercontent.com/80052961/110238938-4f61c300-7f6a-11eb-95c4-56c469adb415.jpg)
+
+**PLACEMENT & ROUTING:**
+
+**bind netlist with physical cells:** Library has different flavours of gates/cells with different sizes, different threshold voltges and different timing information. once we are given proper size/shape to the gate/cell then we go for placement.
+
+**Placement:** Placement is the process of determining the locations of circuit devices on a die surface.
+
+**Optimize placement based on estimated wire length and capacitance:** This is the stage where we estimate wire length and capacitance ,based on that we place repeaters. To maintain signal integrity between the input ports to flops so we use repeaters in between them. Slew depend upon the vaule of the capacitance.The higher the value of cap, the amount of charge required to charge the cap will high because of that slew will be bad.
+
+**need for library and characterizaton:** From RTL2GDSII, one thing is common for all stages i.e is library.All the standard cells being placed in a section is called library.It consists of different sizes/shapes of the gates,different functionality of the gates and differnet Vth (LVT,HVT,SVT) cells. Vth = 0.4v inverter takes more time to switch compare to vth = 0.3v inverter.
+
+**CELL DESIGN FLOW:** It divided into 3 parts : 1. inputs    2. Design steps    3.outputs
+
+**1.Inputs:** Process Design kit's,DRC & LVS,SPICE models,library and user definend specs.
+
+**DRC & LVS**: Technology file provides the lambda rules. For example, polywidth should be 2λ or more than that.
+
+						λ = L/2 where L = min. feature size
+
+**llibrary and user defined specs:**
+
+**cell height** : The separaton between power rails and ground rails decides the cell height.
+
+**cell width** : Cell width depends upon the timing info.if cell drive strength is lower, it's difficult for that cell to drive the huge wire length
+
+**power supply :** A typical inverter has to operate at certain voltage which is provided by the top level designer.
+
+**2. circuit design stpes:**
+
+**i. circuit design:** 1.implement the function 2.model the design in order to meet the library requirements.
+
+**ii. layout design: art of layout is a combination of eluer,s path and stick diagram**
+
+1.function implemented into set of Pmos and nmos
+2.get the pmos netwrok graph and nmos netwrok graph 
+3.get the euler's path and then draw stick diagram
+4.draw layout
+5.extraxt spice model which consist the info of parasitics (R,C)
+
+![12](https://user-images.githubusercontent.com/80052961/110240238-f8abb780-7f70-11eb-8ece-1f37546cf65d.jpg)
+![13](https://user-images.githubusercontent.com/80052961/110240242-fc3f3e80-7f70-11eb-895a-5d51e1bf4eb4.jpg)
+
+**3.Characterization:** It is the step that will help to get the info of timing,noise and power.**GUNA tool** is used for timing,noise and power characterization.
  
  
  
  
- **DAY2 LAB**
+**DAY2 LAB**
  
 **D2SK4 - MCQ5**
 
