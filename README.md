@@ -22,7 +22,7 @@ The repository shows the 5 - day wrokshop for beginners using open source tools 
 
 **Package** QFN - 48 is manufactured by germany labs. The full form of QFN is Quad Flat No leads and the number 48 represents the number of ports of the chip.The package dimensions are 7mm * 7mm.
 
-![alt text](https://user-images.githubusercontent.com/80052961/110233528-90e27600-7f4a-11eb-856b-b47fa4b7a615.JPG?raw=true)
+![1](https://user-images.githubusercontent.com/80052961/110233528-90e27600-7f4a-11eb-856b-b47fa4b7a615.JPG?raw=true)
 
 			QFN - 48
 
@@ -74,6 +74,7 @@ yosys is synthesis tool which is used to convert the rtl code into gate level ne
 
 ![d1sk4](https://github.com/vishnuvardhan-k/vsd-physical-design-using-open-source-tools/blob/main/Day%201/D1SK4-MCQ3.JPG)
 
+D1SK4-MCQ3.JPG
 
 “which” is command used to shows the loction/directory path of tool/folder.Linux which command is used to identify the location of a given executable that is executed when you type the executable name (command) in the terminal prompt. The command searches for the executable specified as an argument in the directories listed in the PATH environment variable.
 
