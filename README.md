@@ -68,9 +68,7 @@ esim - Complext circuit design, SPICE simulation and analysis and PCB design
 qflow - Tool chain for complete RTL2GDS flow
 					  
 
-**DAY1 LAB:**
-
-**DAY1 Lab Skills:**
+**DAY1 LAB SKILLS:**
 
 yosys is synthesis tool which is used to convert the rtl code into gate level netlist. To open the yosys tool, we use the command yosys. 
 
