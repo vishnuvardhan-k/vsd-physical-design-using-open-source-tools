@@ -5,15 +5,15 @@ The repository shows the 5 - day wrokshop for beginners using open source tools 
 
 ## *Contents of 5 - Days Workshop:*
 	
-**Day 1 - Study and review various components of RISC-V based picoSoC**
+- [**Day 1 - Study and review various components of RISC-V based picoSoC**]
 
-**Day 2 - Chip planning strategies and introduction to foundry library cells**
+- [**Day 2 - Chip planning strategies and introduction to foundry library cells**]
 
-**Day 3 - Design and characterize one library cell using Magic Layout tool and ngspice**
+- [**Day 3 - Design and characterize one library cell using Magic Layout tool and ngspice**]
 
-**Day 4 - Pre-layout timing analysis and importance of good clock tree**
+- [**Day 4 - Pre-layout timing analysis and importance of good clock tree**]
 
-**Day 5 - Final steps for RTL2GDS**
+- [**Day 5 - Final steps for RTL2GDS**]
 
 
  **DAY1 - STUDY AND REVIEW VARIUOS COMPONENTS OF RISC - V BASED PicoSoC**
