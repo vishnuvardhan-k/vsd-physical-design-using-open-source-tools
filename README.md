@@ -3,7 +3,7 @@
 The repository shows the 5 - day wrokshop for beginners using open source tools like yosys,magic,opentimer,qrouter and the purpose of this repository is to provide a complete idea about the 5 - days workshop on VLSI SoC/Physical design using open source EDA tools.
 
 
-*CONTENTS OF THE 5 - DAY WORKSHOP:*
+# *CONTENTS OF THE 5 - DAY WORKSHOP:*
 	
 **Day 1 - Study and review various components of RISC-V based picoSoC**
 
@@ -22,7 +22,7 @@ The repository shows the 5 - day wrokshop for beginners using open source tools 
 
 **Package** QFN - 48 is manufactured by germany labs. The full form of QFN is Quad Flat No leads and the number 48 represents the number of ports of the chip.The package dimensions are 7mm * 7mm.
 
-![alt text](https://user-images.githubusercontent.com/80052961/110233528-90e27600-7f4a-11eb-856b-b47fa4b7a615.JPG)
+![1](https://user-images.githubusercontent.com/80052961/110233528-90e27600-7f4a-11eb-856b-b47fa4b7a615.JPG)
 
 			QFN - 48
 
