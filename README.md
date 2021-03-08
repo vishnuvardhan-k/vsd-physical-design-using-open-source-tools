@@ -586,7 +586,7 @@ Setup and hold slack is defined as the difference between data required time and
 
 There are 3 types of routing:
 
-    				1. Grid/area routing
+    				 1. Grid/area routing
 
    				 2. Global routing
 				
