@@ -198,7 +198,7 @@ What is the % ratio of flipflop/total logic ?
 
 If the logic cells occupies the complete area of the core,then this is called as **100% utilization**. The **Utilization Factor** is defined as the ratio of area occupied by netlist to total area of the core. **100% utilization means utilization factor is 1.0**.In practical scenario, we can only use 60 - 70 % utilization.
 
-						utilization factor = area occupied by netlist/Total area of the core
+					utilization factor = area occupied by netlist/Total area of the core
 						
 **aspect ratio** is defined as ratio of height to width of the core. If the aspect ratio is **1** then the chip is in square shape and if it is **0.5** then the chip is in rectangle shape.
 
