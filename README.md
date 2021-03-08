@@ -5,7 +5,7 @@ The repository shows the 5 - day wrokshop for beginners using open source tools 
 
 ## *Contents of 5 - Days Workshop:*
 	
-**Day 1 - Study and review various components of RISC-V based picoSoC**
+[**Day 1 - Study and review various components of RISC-V based picoSoC**](#Day 1 - Study and review various components of RISC-V based picoSoC)
 
 **Day 2 - Chip planning strategies and introduction to foundry library cells**
 
