@@ -74,7 +74,6 @@ yosys is synthesis tool which is used to convert the rtl code into gate level ne
 
 ![d1sk4](https://github.com/vishnuvardhan-k/vsd-physical-design-using-open-source-tools/blob/main/Day%201/D1SK4-MCQ3.JPG)
 
-D1SK4-MCQ3.JPG
 
 “which” is command used to shows the loction/directory path of tool/folder.Linux which command is used to identify the location of a given executable that is executed when you type the executable name (command) in the terminal prompt. The command searches for the executable specified as an argument in the directories listed in the PATH environment variable.
 
