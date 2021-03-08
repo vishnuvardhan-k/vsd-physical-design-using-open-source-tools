@@ -1005,6 +1005,6 @@ It is the max. frequency in postlayout and which is 293.556MHz
 ![D5SK2 - MCQ2](https://user-images.githubusercontent.com/80052961/110232471-d64f7500-7f43-11eb-938c-0ce84aa0c876.jpg)
 
 
-**ACKNOWLEDGEMENT:**
+ACKNOWLEDGEMENT:
 -------------------
 - [KUNAL GHOSH](https://github.com/kunalg123) Co-founder of VLSI System Design (VSD) Corp. Pvt. Ltd.
