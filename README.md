@@ -16,7 +16,7 @@ The repository shows the 5 - day wrokshop for beginners using open source tools 
 - **Day 5 - Final steps for RTL2GDS**
 
 
-*DAY1 - STUDY AND REVIEW VARIUOS COMPONENTS OF RISC - V BASED PicoSoC*
+## *Day 1 - Study and Review Various Components of RISC-V based PicoSoC*
 
 **IC TERMINOLOGIES :**
 
