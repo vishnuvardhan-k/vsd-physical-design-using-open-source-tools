@@ -643,4 +643,4 @@ It is the max. frequency in postlayout and which is 293.556MHz
 
 **ACKNOWLEDGEMENT:**
 
-- [KUNAL GHOSH](https://github.com/kunalg123) Co-founder of VLSI System Design (VSD) Corp. Pvt. Ltd.
+- [Kunal Ghosh](https://github.com/kunalg123) Co-founder of VLSI System Design (VSD) Corp. Pvt. Ltd.
