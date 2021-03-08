@@ -586,21 +586,21 @@ Setup and hold slack is defined as the difference between data required time and
 
 There are 3 types of routing:
 
-    1. Grid/area routing
+    				1. Grid/area routing
 
-    2. Global routing
+   				 2. Global routing
 				
-    3. Detailed routing
+   				 3. Detailed routing
 				
 **Design Rule Check:** These design rules in the technology file. for every technology, the design rules changes.
 
 There 3 typical design rules for the pairs of wires, which are running parallel.
 
-    1. Wire Width : The wire has min. width or more than that is okay
+   - Wire Width : The wire has min. width or more than that is okay
 
-    2. wire pitch: The centre to centre distance between 2 wires called as wire pitch.
+   - wire pitch: The centre to centre distance between 2 wires called as wire pitch.
 
-    3. wire spacing: wire to wire maintain min.spacing or more than that
+   - wire spacing: wire to wire maintain min.spacing or more than that
 
 If signal short occur, we route one of the signal into another metal layer.
 
