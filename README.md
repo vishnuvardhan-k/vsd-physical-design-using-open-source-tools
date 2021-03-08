@@ -5,7 +5,7 @@ The repository shows the 5 - day wrokshop for beginners using open source tools 
 
 ## *Contents of 5 - Days Workshop:*
 	
-- [**DAY1 - STUDY AND REVIEW VARIUOS COMPONENTS OF RISC - V BASED PicoSoC**](Day-1-Study-and-review-various-components-of-RISC-V-based-picoSoC)
+**Day 1 - Study and review various components of RISC-V based picoSoC**
 
 **Day 2 - Chip planning strategies and introduction to foundry library cells**
 
@@ -132,7 +132,7 @@ What is the % ratio of flipflop/total logic ?
  			Ratio of flops to total logic  = 1317/1613 = 12.22%
  
  
- **DAY 2 - CHIP PLANNING STRATEGIES & INTRODUCTION to FOUNDRY LIBRARY CELLS**
+## **DAY 2 - CHIP PLANNING STRATEGIES & INTRODUCTION to FOUNDRY LIBRARY CELLS**
  
  **core** is the section of the chip where the fundamental logic of the design is placed. A**die** ,which consists of core ,is a small semiconductor material specimen on whcih the fundamental circuit is fabricated. A ** netlist** describes the connectivity of a electronic design.
  
@@ -269,7 +269,7 @@ The below image shows the chip area which is selected in the layoutsection.
 ![chipsize](https://user-images.githubusercontent.com/80052961/110209286-917afe00-7eb1-11eb-8ee8-1e10961bd351.JPG)
 
 
-**DAY 3 - DESIGN and CHARACTERIZE one LIBRARY CELL using Magic Layout Tool and ngspice**
+## **DAY 3 - DESIGN and CHARACTERIZE one LIBRARY CELL using Magic Layout Tool and ngspice**
 
 **1.SPICE deck Creation for CMOS Inverter:**
 
@@ -440,7 +440,7 @@ The below figure shows the transient response:
 
 ![D3SK3-MCQ5](https://user-images.githubusercontent.com/80052961/110229966-50c3c900-7f33-11eb-867c-eb2f1101480f.JPG)
 
-**Day 4 - PRE-LAYOUT Timing ANALYSIS and IMPORTANCE of GOOD CLOCK TREE**
+## **Day 4 - PRE-LAYOUT Timing ANALYSIS and IMPORTANCE of GOOD CLOCK TREE**
 
 **Delay Table:** At every level, Each buffer varies output load capacitance and input transitions/slew. in simple way, we have varying input transition at input buffer and varying output load at output load at the output buffer.so that we have different delays for one buffer/cell and solution for that is delay table. **Delay Table** is the representation of delays of a particular cell while varying the input slew and output load.
 
@@ -580,7 +580,7 @@ Setup and hold slack is defined as the difference between data required time and
 ![D4SK4-MCQ5](https://user-images.githubusercontent.com/80052961/110231887-6b506f00-7f40-11eb-9ade-40f1461ca9a6.jpg)
 
 
-**Day 5 - Final steps for RTL2GDS**
+## **Day 5 - Final steps for RTL2GDS**
 
 **Routing:** In the vlsi design cycle, routing follows cell placement. To interconnect all the pins according to the specification of nets its konwn as **routing**. once routing is completed, precise paths are defined on the layout surface on which conductors carrying electrical signals are run. The main objective of routing is to minimize the area required for routing.
 
