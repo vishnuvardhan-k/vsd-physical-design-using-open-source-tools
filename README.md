@@ -3,7 +3,7 @@
 The repository shows the 5 - day wrokshop for beginners using open source tools like yosys,magic,opentimer,qrouter and the purpose of this repository is to provide a complete idea about the 5 - days workshop on VLSI SoC/Physical design using open source EDA tools.
 
 
-## *CONTENTS OF THE 5 - DAY WORKSHOP:*
+## *Contents of 5 - Days Workshop:*
 	
 **Day 1 - Study and review various components of RISC-V based picoSoC**
 
