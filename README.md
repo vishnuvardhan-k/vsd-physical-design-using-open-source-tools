@@ -1,6 +1,6 @@
 # VSD PHYSICAL DESIGN USING OPEN SOURCE TOOLS
 
-The repository shows the 5 - day wrokshop for beginners using open source tools like yosys,magic,opentimer,qrouter and the purpose of this repository is to provide a complete idea about the 5 - days workshop on VLSI SoC/Physical design using open source EDA tools.
+The repository shows the 5 - day workshop for beginners using open source tools like yosys,magic,opentimer,qrouter and the purpose of this repository is to provide a complete idea about the 5 - days workshop on VLSI SoC/Physical design using open source EDA tools.
 
 
 ## *Contents of 5 - Days Workshop:*
@@ -409,7 +409,7 @@ The below figure shows the command which are used to open magic tool with a tech
 
 ![D3SK3-MCQ3_0](https://user-images.githubusercontent.com/80052961/110229663-24a74880-7f31-11eb-9934-ca3912959f0f.JPG)
 
-The blow image shows the layout diagram of a function. In the layout, the pink color strips are polysilicon strips and bottom of the layout shows the gnd terminal and it has contacts which are used to connect the ground terminal.
+The below image shows the layout diagram of a function. In the layout, the pink color strips are polysilicon strips and bottom of the layout shows the gnd terminal and it has contacts which are used to connect the ground terminal.
 
 ![D3SK3-MCQ3](https://user-images.githubusercontent.com/80052961/110229666-28d36600-7f31-11eb-9300-a52158cd22c4.JPG)
 
