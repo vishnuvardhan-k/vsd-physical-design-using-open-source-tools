@@ -308,7 +308,7 @@ using pull up network, we can build pull down network using duality theorem and 
 ![22](https://user-images.githubusercontent.com/80052961/110242603-d4ee6e80-7f7c-11eb-8da3-964dbd20b2e7.JPG)
 ![23](https://user-images.githubusercontent.com/80052961/110242613-d91a8c00-7f7c-11eb-86cc-9fb5c37fa6d2.JPG)
 
-The function of the circuit 			f = ((A.C).(B+D) + (E.F))'
+The function of the circuit 			f = ((A+C).(B+D) + (E.F))'
 
 **Layout using only stick diagram:** These are the problems comes into picture, if we are only using stick diagram to draw a layout.
 
